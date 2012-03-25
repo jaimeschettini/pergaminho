@@ -1,0 +1,500 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"deli",
+				"delicious"
+			],
+			[
+				"fla",
+				"flavor"
+			],
+			[
+				"ac",
+				"activation_needed_email"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ident",
+				"Indentation: Convert to Spaces"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/development/ruby/estudo/apps/curso de saas/spec/dessert_spec.rb",
+		"/development/ruby/estudo/apps/curso de saas/lib/funny_strings.rb",
+		"/development/ruby/estudo/apps/curso de saas/lib/dessert.rb",
+		"/development/ruby/estudo/apps/curso de saas/lib/jelly_bean.rb",
+		"/development/ruby/estudo/apps/curso de saas/spec/funny_strings_spec.rb",
+		"/development/ruby/estudo/apps/curso de saas/spec/anagrams_spec.rb",
+		"/development/ruby/estudo/apps/curso de saas/lib/anagrams.rb",
+		"/development/ruby/workspace/pitagoras/app/views/users/show.html.erb",
+		"/development/ruby/workspace/pitagoras/app/views/layouts/application.html.erb",
+		"/development/ruby/workspace/pitagoras/app/controllers/user_sessions_controller.rb",
+		"/development/ruby/workspace/pitagoras/app/models/user.rb",
+		"/development/ruby/workspace/pitagoras/db/migrate/20120219212733_add_admin_to_user.rb",
+		"/development/ruby/workspace/pitagoras/db/migrate/20120212173500_sorcery_user_activation.rb",
+		"/development/ruby/workspace/pitagoras/app/controllers/users_controller.rb",
+		"/development/ruby/workspace/pitagoras/config/locales/pt-BR.yml",
+		"/development/ruby/workspace/pitagoras/app/controllers/application_controller.rb",
+		"/development/ruby/workspace/pitagoras/app/assets/stylesheets/application.css",
+		"/development/ruby/workspace/pitagoras/app/views/users/index.html.erb",
+		"/development/ruby/workspace/pitagoras/app/views/home/index.html.erb",
+		"/development/ruby/workspace/pitagoras/config/routes.rb",
+		"/development/ruby/workspace/pitagoras/app/views/users/edit.html.erb",
+		"/development/ruby/workspace/pitagoras/app/views/users/_form.html.erb",
+		"/development/ruby/workspace/pitagoras/app/views/user_sessions/new.html.erb",
+		"/development/ruby/workspace/pitagoras/app/views/users/new.html.erb",
+		"/development/ruby/workspace/pitagoras/app/views/user_sessions/_form.html.erb",
+		"/development/ruby/workspace/pitagoras/config/boot.rb",
+		"/development/ruby/workspace/pitagoras/config/application.rb",
+		"/development/ruby/workspace/pitagoras/config/locales/en.yml",
+		"/development/ruby/workspace/pitagoras/config/locales/pt.yml",
+		"/development/ruby/workspace/pitagoras/config/initializers/wrap_parameters.rb",
+		"/development/ruby/workspace/pitagoras/app/assets/stylesheets/scaffolds.css.scss",
+		"/development/ruby/workspace/pitagoras/config/initializers/sorcery.rb",
+		"/development/ruby/workspace/pitagoras/Gemfile",
+		"/development/ruby/workspace/pitagoras/test/functional/user_mailer_test.rb",
+		"/development/ruby/workspace/pitagoras/test/fixtures/users.yml",
+		"/development/ruby/workspace/pitagoras/app/mailers/.gitkeep",
+		"/development/ruby/workspace/pitagoras/config/environments/production.rb",
+		"/development/ruby/workspace/pitagoras/config/environments/development.rb",
+		"/development/ruby/workspace/pitagoras/app/mailers/user_mailer.rb",
+		"/development/ruby/workspace/pitagoras/app/views/user_mailer/activation_needed_email.text.erb",
+		"/development/ruby/workspace/pitagoras/app/views/user_mailer/activation_success_email.text.erb",
+		"/development/ruby/workspace/pitagoras/test/fixtures/.gitkeep",
+		"/development/ruby/workspace/pitagoras/db/migrate/20120212154556_sorcery_core.rb",
+		"/development/ruby/workspace/pitagoras/db/migrate/20120212162000_add_remember_me_token_to_users.rb",
+		"/development/ruby/workspace/pitagoras/public/index.html",
+		"/development/ruby/workspace/pitagoras/config/initializers/backtrace_silencers.rb",
+		"/home/jaime/.config/sublime-text-2/Packages/Default/Base File.sublime-settings",
+		"/home/jaime/.config/sublime-text-2/Packages/User/Base File.sublime-settings",
+		"/home/jaime/.config/sublime-text-2/Packages/Default/Global.sublime-settings",
+		"/home/jaime/.config/sublime-text-2/Packages/User/Global.sublime-settings",
+		"/development/ruby/workspace/pitagoras/db/migrate/20120212160158_create_users.rb",
+		"/development/ruby/workspace/pitagoras/config/initializers/mime_types.rb",
+		"/development/ruby/workspace/pitagoras/config/database.yml",
+		"/home/jaime/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/jaime/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/development/ruby/workspace/pitagoras.sublime-project"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"please login first",
+			"h1",
+			"conten",
+			"size",
+			"  ",
+			"font-size: 13px;",
+			"../images/",
+			"images/",
+			" 	",
+			"UserMailer",
+			"    ",
+			"mailer",
+			"default",
+			"skip_before_filter",
+			"    ",
+			"<!",
+			"      <%= ",
+			"use",
+			"space",
+			"postgres",
+			"postgre",
+			"postgres",
+			"\n",
+			"searc",
+			"open"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"../images/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"inde",
+				"app/views/home/index.html.erb"
+			],
+			[
+				"usersess",
+				"app/controllers/user_sessions_controller.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"applhtml",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"sorce",
+				"config/initializers/sorcery.rb"
+			],
+			[
+				"pt-",
+				"config/locales/pt-BR.yml"
+			],
+			[
+				"appcontr",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"userscon",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"applicaht",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"applicss",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"home",
+				"app/views/home/index.html.erb"
+			],
+			[
+				"userses",
+				"app/controllers/user_sessions_controller.rb"
+			],
+			[
+				"applicahtml",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"applicacss",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"usersec",
+				"app/controllers/user_sessions_controller.rb"
+			],
+			[
+				"form",
+				"app/views/users/_form.html.erb"
+			],
+			[
+				"pt-br",
+				"config/locales/pt-BR.yml"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"usercon",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"boot",
+				"config/boot.rb"
+			],
+			[
+				"en",
+				"config/locales/en.yml"
+			],
+			[
+				"applica",
+				"config/application.rb"
+			],
+			[
+				"applicahtm",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"en.y",
+				"config/locales/en.yml"
+			],
+			[
+				"new",
+				"app/views/user_sessions/new.html.erb"
+			],
+			[
+				"userse",
+				"app/controllers/user_sessions_controller.rb"
+			],
+			[
+				"scaff",
+				"app/assets/stylesheets/scaffolds.css.scss"
+			],
+			[
+				"scaf",
+				"app/assets/stylesheets/scaffolds.css.scss"
+			],
+			[
+				"sessform",
+				"app/views/user_sessions/_form.html.erb"
+			],
+			[
+				"sessionew",
+				"app/views/user_sessions/new.html.erb"
+			],
+			[
+				"usesess",
+				"app/controllers/user_sessions_controller.rb"
+			],
+			[
+				"applcss",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"usermailer",
+				"test/functional/user_mailer_test.rb"
+			],
+			[
+				"userc",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"sor",
+				"config/initializers/sorcery.rb"
+			],
+			[
+				"appl",
+				"config/application.rb"
+			],
+			[
+				"usersc",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"actineed",
+				"app/views/user_mailer/activation_needed_email.text.erb"
+			],
+			[
+				"activa",
+				"app/views/user_mailer/activation_success_email.text.erb"
+			],
+			[
+				"fisuse",
+				"test/fixtures/users.yml"
+			],
+			[
+				"fix",
+				"test/fixtures/.gitkeep"
+			],
+			[
+				"usermail",
+				"test/functional/user_mailer_test.rb"
+			],
+			[
+				"configapp",
+				"config/application.rb"
+			],
+			[
+				"sorcer",
+				"config/initializers/sorcery.rb"
+			],
+			[
+				"developme",
+				"config/environments/development.rb"
+			],
+			[
+				"act",
+				"app/views/user_mailer/activation_success_email.text.erb"
+			],
+			[
+				"mailer",
+				"app/mailers/user_mailer.rb"
+			],
+			[
+				"sorc",
+				"config/initializers/sorcery.rb"
+			],
+			[
+				"acti",
+				"app/views/user_mailer/activation_needed_email.text.erb"
+			],
+			[
+				"activanee",
+				"app/views/user_mailer/activation_needed_email.text.erb"
+			],
+			[
+				"usermai",
+				"app/mailers/user_mailer.rb"
+			],
+			[
+				"migra",
+				"db/migrate/20120212154556_sorcery_core.rb"
+			],
+			[
+				"index",
+				"public/index.html"
+			],
+			[
+				"aaplicaco",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"usersesc",
+				"app/controllers/user_sessions_controller.rb"
+			],
+			[
+				"usercontro",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"appc",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"appli",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"usersco",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"applihtm",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"users",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"usersessc",
+				"app/controllers/user_sessions_controller.rb"
+			],
+			[
+				"sessioncontro",
+				"app/controllers/user_sessions_controller.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 355.0,
+	"status_bar_visible": true
+}

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Company:</b>
+  <%= @document.company_id %>
+</p>
+
+<p>
+  <b>Issue:</b>
+  <%= @document.issue_id %>
+</p>
+
+<p>
+  <b>Department:</b>
+  <%= @document.department_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @document.description %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%= @document.place %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @document.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>

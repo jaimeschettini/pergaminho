@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pergaminho</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="outer">
+
+	<div id="upbg"></div>
+
+	<div id="inner">
+
+		<div id="header1">
+			<h1><span>Pergaminho</span><sup>1.0</sup></h1>
+			<h2>by jSchettini</h2>
+		</div>
+	
+		<div id="header2"></div>
+		
+		<div id="menu_up">
+			<div id="menu_up1">
+				<ul>
+					<li ><a href="/sapienti/home.jsf">Documentos</a></li>
+					<li ><a href="/sapienti/usuario/listagem.jsf">Usu&aacute;rios</a></li>
+					<li ><a href="/sapienti/pessoa/listagem.jsf">Solicitantes</a></li>
+					<li ><a href="/sapienti/relatorio/home.jsf">Relat&oacute;rios</a></li>
+				</ul>
+			</div>
+				
+			<div id="menu_up2">
+				<ul>
+					<li ><a href="/sapienti/home.jsf">Documentos</a></li>
+					<li ><a href="/sapienti/relatorio/home.jsf">Relat&oacute;rios</a></li>
+				</ul>
+			</div>
+			
+			<div id="user_info">
+				<div id="frmUser">
+					<span>"Bem vindo, " </span>
+				</div>
+			</div>
+		</div>
+		
+		<div id="menu_side">
+			<!-- menu_side start -->
+			
+			<h3 >Menu</h3>
+			<ul class="linklist">
+				<li><div class="area_link"><%= link_to "Documentos", :documents %></div></li>
+				<li><div class="area_link"><%= link_to "Empresas", :companies %></div></li>
+				<li><div class="area_link"><%= link_to "Assuntos", :issues %></div></li>
+				<li><div class="area_link"><%= link_to "Departamentos", :departments %></div></li>
+				<li><a href="/sapienti/documento/consulta.jsf"><div id="area_link">Consultas</div></a></li>
+				<li><a href="/sapienti/emprestimo/listagem.jsf"><div id="area_link">Empr&eacute;stimos</div></a></li>
+		</ul>
+			
+			<!-- menu_side end -->
+		</div>
+			
+		<div id="primarycontent">
+			<!-- primary content start -->
+		
+			<div class="dinamic_content">
+				<%= yield %>
+			</div>
+
+			<!-- primary content end -->
+		</div>
+	
+		<div id="footer">
+			Desenvolvido por <a href="mailto:suporte.jsch@gmail.com">jSchettini</a>. Design original por <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>.
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>
