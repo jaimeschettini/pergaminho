@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120325192757) do
+ActiveRecord::Schema.define(:version => 20120325213628) do
 
   create_table "companies", :force => true do |t|
     t.string   "name"
@@ -31,9 +31,9 @@ ActiveRecord::Schema.define(:version => 20120325192757) do
     t.integer  "department_id"
     t.string   "description"
     t.string   "place"
-    t.string   "status"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.boolean  "status",        :limit => 255
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
   end
 
   create_table "issues", :force => true do |t|

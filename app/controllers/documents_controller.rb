@@ -1,13 +1,21 @@
 class DocumentsController < ApplicationController
+
   # GET /documents
   # GET /documents.json
   def index
     @documents = Document.all
+    @document = Document.new
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @documents }
     end
+  end
+
+  def search
+    @document = Document.new(params[:document])
+    @documents = @document.search
+    render :action => :index
   end
 
   # GET /documents/1
@@ -44,7 +52,7 @@ class DocumentsController < ApplicationController
 
     respond_to do |format|
       if @document.save
-        format.html { redirect_to @document, notice: 'Document was successfully created.' }
+        format.html { redirect_to documents_path, notice: 'O document foi criado com sucesso.' }
         format.json { render json: @document, status: :created, location: @document }
       else
         format.html { render action: "new" }

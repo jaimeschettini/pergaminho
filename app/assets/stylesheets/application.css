@@ -6,7 +6,7 @@
 /* Basic fields */
 body {
 	background: #F9F9F7 url('a1.gif') repeat-x;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: "trebuchet ms", helvetica, sans-serif;
 	color: #8C8C73;
 	line-height: 18px;
@@ -21,6 +21,13 @@ a:hover {
 	text-decoration: none;
 }
 
+h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #8C8C73;
+}
+
 /* Forms */
 .label {
 	font-size: 9pt;
@@ -31,11 +38,22 @@ a:hover {
 	text-align: right;
 }
 
-.buttonCancel {
+.delete_item, .edit_item {
 	border: 0px;
 	text-decoration: none;
-	width: 40px;
-	height: 12px;
+	display: block;
+}
+
+.delete_item {
+	background-image: url('delete2.png');
+	height: 16px;
+	width: 16px;
+}
+
+.edit_item {
+	background-image: url('edit.png');
+	height: 22px;
+	width: 22px;
 }
 
 .buttonEmprestimo {
@@ -68,6 +86,20 @@ a:hover {
 	width: 250px;
 	border: 1px solid #F2F2F2;
 	margin: 20px auto 0px auto;
+}
+
+.search {
+	margin: -5px 0 10px 0;
+	font-size: 12px;
+}
+
+.search input[type=text], .search select {
+	height: 20px !important;
+	width: 150px !important;
+}
+
+.search input[type=submit] {
+	height: 25px !important;
 }
 
 /* Version */
@@ -142,8 +174,8 @@ ul.linklist {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	background: #fff url('upbg.gif') no-repeat;
-	width: 747px;
+	background: #fff;
+	width: 1024px;
 	height: 264px;
 	z-index: 1;
 }
@@ -151,9 +183,9 @@ ul.linklist {
 /* Css to represent the size of the page */
 #outer {
 	position: relative;
-	width: 747px;
+	width: 1024px;
 	margin: 0 auto;
-	background: #fff url('abg.gif') repeat-y;
+	background: #fff;
 }
 
 #inner {
@@ -166,7 +198,7 @@ ul.linklist {
 #header1 {
 	position: absolute;
 	background: #FF7800 url('a8.gif') repeat-x;
-	width: 202px;
+	width: 480px;
 	height: 88px;
 	color: #fff;
 	padding-left: 20px;
@@ -223,7 +255,7 @@ ul.linklist {
 #menu_up ul li {
 	display: inline;
 	line-height: 52px;
-	padding-left: 3px;
+	padding-left: 0px;
 }
 
 #menu_up ul li.first {
@@ -233,7 +265,7 @@ ul.linklist {
 #menu_up ul li a {
 	background-color: transparent;
 	background-repeat: repeat-x;
-	padding: 8px 12px 8px 12px;
+	padding: 8px 5px;
 	font-size: 12px;
 	color: #fff;
 	font-weight: bold;
@@ -336,10 +368,9 @@ ul.linklist {
 
 #primarycontent {
 	position: relative;
-	width: 545px;
+	width: 950px;
 	min-height: 400px;
-	float: right;
-	margin-left: 7px;
+	margin-left: 15px;
 }
 
 #primarycontent h3 {
@@ -430,7 +461,7 @@ ul.linklist {
 
 #free_primarycontent {
 	position: relative;
-	width: 687px;
+	width: 1024px;
 	float: left;
 	margin-left: 0px;
 	border: 0px solid #000;
@@ -882,6 +913,24 @@ ul.linklist {
 	padding-left: 8px;	
 }
 
+input[type=text], select {
+	margin: 3px 0;
+	height: 25px;
+	width: 300px;
+	font-size: 14px;
+}
+
+input[type=submit] {
+	margin: 5px 0;
+	width: 70px;
+	height: 30px;
+	font-size: 14px;
+}
+
+input[type=text].smaller {
+	width: 100px;
+}
+
 /*
    ------------------------------------------------------------
    Table and scroller components
@@ -947,21 +996,31 @@ ul.linklist {
 	width: 535px;
 }
 
-.standardTable {
+table {
 	font-family: verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #000000;
 	padding: 2;
 	border-style: solid;
 	border-width: 1px;
+	width: 950px;	
 }
 
-.standardTable_Header {
+table th {
 	color: #FFFFFF;
 	background-color: #656551;
 	padding: 3;
 	text-align: center;
 	border: none;
+	height: 25px;
+}
+
+table tr {
+	height: 22px;
+}
+
+table td {
+	padding-left: 3px;
 }
 
 .standardTable_SortHeader {
@@ -977,11 +1036,11 @@ ul.linklist {
 	background-color: #FFFFE0;
 }
 
-.standardTable_Row1 {
+.odd {
 	background-color: #e8e8de;
 }
 
-.standardTable_Row2 {
+.even {
 	background-color: #FFFFFF;
 }
 

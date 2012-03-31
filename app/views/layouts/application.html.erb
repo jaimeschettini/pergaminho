@@ -24,17 +24,15 @@
 		<div id="menu_up">
 			<div id="menu_up1">
 				<ul>
-					<li ><a href="/sapienti/home.jsf">Documentos</a></li>
+					<li ><%= link_to "Docs", :documents %></li>
 					<li ><a href="/sapienti/usuario/listagem.jsf">Usu&aacute;rios</a></li>
 					<li ><a href="/sapienti/pessoa/listagem.jsf">Solicitantes</a></li>
 					<li ><a href="/sapienti/relatorio/home.jsf">Relat&oacute;rios</a></li>
-				</ul>
-			</div>
-				
-			<div id="menu_up2">
-				<ul>
-					<li ><a href="/sapienti/home.jsf">Documentos</a></li>
-					<li ><a href="/sapienti/relatorio/home.jsf">Relat&oacute;rios</a></li>
+
+					<li ><%= link_to "Empresas", :companies %></li>
+					<li ><%= link_to "Assuntos", :issues %></li>
+					<li ><%= link_to "Departamentos", :departments %></li>
+					<li ><a href="/sapienti/usuario/listagem.jsf">Consultas</a></li>
 				</ul>
 			</div>
 			
@@ -45,22 +43,6 @@
 			</div>
 		</div>
 		
-		<div id="menu_side">
-			<!-- menu_side start -->
-			
-			<h3 >Menu</h3>
-			<ul class="linklist">
-				<li><div class="area_link"><%= link_to "Documentos", :documents %></div></li>
-				<li><div class="area_link"><%= link_to "Empresas", :companies %></div></li>
-				<li><div class="area_link"><%= link_to "Assuntos", :issues %></div></li>
-				<li><div class="area_link"><%= link_to "Departamentos", :departments %></div></li>
-				<li><a href="/sapienti/documento/consulta.jsf"><div id="area_link">Consultas</div></a></li>
-				<li><a href="/sapienti/emprestimo/listagem.jsf"><div id="area_link">Empr&eacute;stimos</div></a></li>
-		</ul>
-			
-			<!-- menu_side end -->
-		</div>
-			
 		<div id="primarycontent">
 			<!-- primary content start -->
 		

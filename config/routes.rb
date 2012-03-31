@@ -1,12 +1,17 @@
 Pergaminho::Application.routes.draw do
   root :to => 'home#index'
-  
-  get "home/index"
 
-  resources :documents
+  get "home/index"
+  
+
+  resources :documents do
+    get 'search', :on => :collection
+  end
   resources :departments
   resources :companies
   resources :issues
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
