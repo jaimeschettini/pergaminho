@@ -1,21 +1,22 @@
-<h1>Assuntos</h1>
-
-<table>
-  <tr>
-    <th>Descrição</th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @issues.each do |issue| %>
-  <tr class="<%= cycle("even", "odd") %>">
-    <td><%= issue.description %></td>
-    <td><%= link_to 'Editar', edit_issue_path(issue) %></td>
-    <td><%= link_to 'Deletar', issue, confirm: 'Tem certeza?', method: :delete %></td>
-  </tr>
-<% end %>
+<h1>Issues</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @issues.each do |issue| %>
+      <tr>
+        <td><%= link_to issue.description, issue_path(issue) %></td>
+        <td>
+          <%= link_to 'Editar', edit_issue_path(issue), :class => 'btn btn-mini' %>
+          <%= link_to 'Deletar', issue_path(issue), :method => :delete, :confirm => 'Tem certeza?', :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
-<br />
-
-<%= link_to 'New Issue', new_issue_path %>
+<%= link_to 'Novo', new_issue_path, :class => 'btn btn-primary' %>

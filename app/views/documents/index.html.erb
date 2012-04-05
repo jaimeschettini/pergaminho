@@ -8,6 +8,17 @@
         <label>Descrição</label>
         <%= f.text_field :description %>
 
+        <%= f.select :issue_id,
+          Issue.find(:all).collect { |issue| [issue.description, issue.id] },
+          :prompt => "Assunto..." %>
+
+        <%= f.select :company_id,
+          Company.find(:all).collect { |company| [company.name, company.id] },
+          :prompt => "Empresa..." %>
+
+        <%= f.select :department_id,
+          Department.find(:all).collect { |department| [department.name, department.id] },
+          :prompt => "Departamento..." %>
         <%= f.submit "Ok" %>
     <% end %>
 </div>  

@@ -44,26 +44,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/documents/index.html.erb",
+			"file": "app/views/issues/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 1110,
+				"buffer_size": 626,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/documents_controller.rb",
+			"file": "app/assets/javascripts/application.js",
 			"settings":
 			{
-				"buffer_size": 2200,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/document.rb",
-			"settings":
-			{
-				"buffer_size": 1101,
+				"buffer_size": 549,
 				"line_ending": "Unix"
 			}
 		}
@@ -96,17 +88,23 @@
 	},
 	"file_history":
 	[
-		"/development/ruby/workspace/pergaminho/config/routes.rb",
-		"/development/ruby/workspace/pergaminho/app/views/documents/_form.html.erb",
-		"/development/ruby/workspace/pergaminho/app/models/document.rb",
 		"/development/ruby/workspace/pergaminho/app/assets/stylesheets/application.css",
 		"/development/ruby/workspace/pergaminho/app/assets/javascripts/application.js",
-		"/development/ruby/workspace/pergaminho/app/assets/images/delete.png",
-		"/development/ruby/workspace/pergaminho/app/controllers/documents_controller.rb",
-		"/development/ruby/workspace/pergaminho/app/models/company.rb",
-		"/development/ruby/workspace/pergaminho/Gemfile",
-		"/development/ruby/workspace/pergaminho/app/views/issues/_form.html.erb",
 		"/development/ruby/workspace/pergaminho/app/views/layouts/application.html.erb",
+		"/development/ruby/workspace/pergaminho/app/views/issues/index.html.erb",
+		"/development/ruby/workspace/pergaminho/app/assets/stylesheets/bootstrap_and_overrides.css.less",
+		"/development/ruby/workspace/pergaminho/config/application.rb",
+		"/development/ruby/workspace/pergaminho/Gemfile",
+		"/development/ruby/workspace/pergaminho/app/assets/stylesheets/scaffolds.css.scss",
+		"/development/ruby/workspace/pergaminho/app/assets/images/a10.jpg",
+		"/development/ruby/workspace/pergaminho/app/views/documents/_form.html.erb",
+		"/development/ruby/workspace/pergaminho/app/views/documents/index.html.erb",
+		"/development/ruby/workspace/pergaminho/app/controllers/documents_controller.rb",
+		"/development/ruby/workspace/pergaminho/app/models/document.rb",
+		"/development/ruby/workspace/pergaminho/config/routes.rb",
+		"/development/ruby/workspace/pergaminho/app/assets/images/delete.png",
+		"/development/ruby/workspace/pergaminho/app/models/company.rb",
+		"/development/ruby/workspace/pergaminho/app/views/issues/_form.html.erb",
 		"/development/ruby/workspace/pergaminho/app/controllers/companies_controller.rb",
 		"/development/ruby/workspace/pergaminho/app/views/companies/show.html.erb",
 		"/development/ruby/workspace/pergaminho/app/views/companies/index.html.erb",
@@ -117,8 +115,6 @@
 		"/development/ruby/workspace/pergaminho/app/views/documents/new.html.erb",
 		"/development/ruby/workspace/pergaminho/app/views/departments/new.html.erb",
 		"/development/ruby/workspace/pergaminho/app/views/companies/new.html.erb",
-		"/development/ruby/workspace/pergaminho/app/views/documents/index.html.erb",
-		"/development/ruby/workspace/pergaminho/app/views/issues/index.html.erb",
 		"/development/ruby/workspace/pergaminho/app/views/departments/index.html.erb",
 		"/development/ruby/workspace/pergaminho/app/views/home/index.html.erb",
 		"/development/ruby/workspace/pergaminho/db/migrate/20120325213628_change_documents_status_type_to_boolean.rb",
@@ -192,7 +188,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			""
@@ -203,6 +199,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"some store",
+			"issue",
 			"Document",
 			"conditions",
 			"    </",
@@ -274,6 +272,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"department",
 			"",
 			"div",
 			"",
@@ -295,56 +294,28 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/documents/index.html.erb",
+					"file": "app/views/issues/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 1110,
+						"buffer_size": 626,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								147,
-								147
+								111,
+								111
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/controllers/documents_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2200,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								376,
-								376
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -355,28 +326,27 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/models/document.rb",
+					"buffer": 1,
+					"file": "app/assets/javascripts/application.js",
 					"settings":
 					{
-						"buffer_size": 1101,
+						"buffer_size": 549,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1003,
-								1003
+								547,
+								547
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 408.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -426,12 +396,68 @@
 		"selected_items":
 		[
 			[
-				"document",
-				"app/models/document.rb"
+				"appljs",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"index",
+				"app/views/issues/index.html.erb"
+			],
+			[
+				"boo",
+				"app/assets/stylesheets/bootstrap_and_overrides.css.less"
+			],
+			[
+				"applht",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"appl",
+				"config/application.rb"
+			],
+			[
+				"appliccss",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"applica",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"applicajs",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"gemfi",
+				"Gemfile"
+			],
+			[
+				"applihtm",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"inde",
+				"app/views/issues/index.html.erb"
+			],
+			[
+				"applicacss",
+				"app/assets/stylesheets/application.css"
 			],
 			[
 				"form",
 				"app/views/documents/_form.html.erb"
+			],
+			[
+				"docu",
+				"app/models/document.rb"
+			],
+			[
+				"docucontr",
+				"app/controllers/documents_controller.rb"
+			],
+			[
+				"document",
+				"app/models/document.rb"
 			],
 			[
 				"routes",
@@ -444,18 +470,6 @@
 			[
 				"applijs",
 				"app/assets/javascripts/application.js"
-			],
-			[
-				"docucontr",
-				"app/controllers/documents_controller.rb"
-			],
-			[
-				"applicacss",
-				"app/assets/stylesheets/application.css"
-			],
-			[
-				"index",
-				"app/views/documents/index.html.erb"
 			],
 			[
 				"applcss",
@@ -472,10 +486,6 @@
 			[
 				"documentsc",
 				"app/controllers/documents_controller.rb"
-			],
-			[
-				"applica",
-				"app/views/layouts/application.html.erb"
 			],
 			[
 				"applocht",
@@ -544,10 +554,6 @@
 			[
 				"documen",
 				"app/models/document.rb"
-			],
-			[
-				"inde",
-				"app/views/home/index.html.erb"
 			],
 			[
 				"usersess",
@@ -658,10 +664,6 @@
 				"config/initializers/sorcery.rb"
 			],
 			[
-				"appl",
-				"config/application.rb"
-			],
-			[
 				"usersc",
 				"app/controllers/users_controller.rb"
 			],
@@ -744,10 +746,6 @@
 			[
 				"usersco",
 				"app/controllers/users_controller.rb"
-			],
-			[
-				"applihtm",
-				"app/views/layouts/application.html.erb"
 			],
 			[
 				"users",
