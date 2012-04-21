@@ -5,3 +5,39 @@
  *= require_self
  *= require_tree .
 */
+
+h1 {
+	display: inline;
+}
+
+.search {
+	margin-top: 15px;
+}
+
+.search legend {
+	font-size: 12px;
+	margin: -10px 0 10px 0;
+	padding: 0 0 5px 0;
+	line-height: 12px;
+}
+
+.new {
+	display: inline;
+}
+
+.new a {
+	margin: -10px 0 0 10px;
+}
+
+.form-inline select {
+	width: 20%;	
+}
+
+.field_with_errors > label, .field_with_errors .help-block, .field_with_errors .help-inline > label {
+	color: #B94A48;
+}
+
+.field_with_errors input, .field_with_errors select, .field_with_errors textarea {
+	color: #B94A48;
+	border-color: #B94A48;
+}

@@ -44,18 +44,34 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/issues/index.html.erb",
+			"file": "app/views/documents/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 626,
+				"buffer_size": 1864,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/javascripts/application.js",
+			"file": "/home/jaime/Área de Trabalho/form.html.erb",
 			"settings":
 			{
-				"buffer_size": 549,
+				"buffer_size": 1251,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jaime/Área de Trabalho/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1579,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/documents/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1516,
 				"line_ending": "Unix"
 			}
 		}
@@ -88,10 +104,10 @@
 	},
 	"file_history":
 	[
-		"/development/ruby/workspace/pergaminho/app/assets/stylesheets/application.css",
 		"/development/ruby/workspace/pergaminho/app/assets/javascripts/application.js",
-		"/development/ruby/workspace/pergaminho/app/views/layouts/application.html.erb",
 		"/development/ruby/workspace/pergaminho/app/views/issues/index.html.erb",
+		"/development/ruby/workspace/pergaminho/app/assets/stylesheets/application.css",
+		"/development/ruby/workspace/pergaminho/app/views/layouts/application.html.erb",
 		"/development/ruby/workspace/pergaminho/app/assets/stylesheets/bootstrap_and_overrides.css.less",
 		"/development/ruby/workspace/pergaminho/config/application.rb",
 		"/development/ruby/workspace/pergaminho/Gemfile",
@@ -188,7 +204,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -299,18 +315,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/issues/index.html.erb",
+					"file": "app/views/documents/_form.html.erb",
 					"settings":
 					{
-						"buffer_size": 626,
+						"buffer_size": 1864,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								111,
-								111
+								673,
+								673
 							]
 						],
 						"settings":
@@ -327,23 +343,81 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/assets/javascripts/application.js",
+					"file": "/home/jaime/Área de Trabalho/form.html.erb",
 					"settings":
 					{
-						"buffer_size": 549,
+						"buffer_size": 1251,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								547,
-								547
+								360,
+								503
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/jaime/Área de Trabalho/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1579,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								44
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/documents/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								232,
+								232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -396,12 +470,16 @@
 		"selected_items":
 		[
 			[
-				"appljs",
-				"app/assets/javascripts/application.js"
+				"index",
+				"app/views/documents/index.html.erb"
 			],
 			[
-				"index",
-				"app/views/issues/index.html.erb"
+				"form",
+				"app/views/documents/_form.html.erb"
+			],
+			[
+				"appljs",
+				"app/assets/javascripts/application.js"
 			],
 			[
 				"boo",
@@ -442,10 +520,6 @@
 			[
 				"applicacss",
 				"app/assets/stylesheets/application.css"
-			],
-			[
-				"form",
-				"app/views/documents/_form.html.erb"
 			],
 			[
 				"docu",
@@ -778,6 +852,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 355.0,
+	"side_bar_width": 346.0,
 	"status_bar_visible": true
 }

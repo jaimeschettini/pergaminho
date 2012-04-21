@@ -1,5 +1,5 @@
 class Document < ActiveRecord::Base
-	validates :description, :issue, :department, :company, :presence => true
+	validates :description, :issue_id, :department_id, :company_id, :place, :presence => true
 
 	before_save :default_values
 

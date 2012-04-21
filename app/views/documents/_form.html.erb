@@ -1,43 +1,51 @@
-<%= form_for(@document) do |f| %>
-  <% if @document.errors.any? %>
-    <div id="error_explanation">
-      <h2>Não foi possível salvar a empresa:</h2>
+<%= form_for @document, :validate => true, :html => { :class => 'form-horizontal' } do |f| %>
+  <fieldset>
+    <legend>Criar Documento</legend>
 
-      <ul>
-      <% @document.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label "Empresa" %><br />
-    <%= f.select :company_id,
+    <div class="control-group">
+      <%= f.label "Empresa", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.select :company_id,
           Company.find(:all).collect { |company| [company.name, company.id] },
           :prompt => "Selecione..." %>
-  </div>
-  <div class="field">
-    <%= f.label "Assunto" %><br />
-    <%= f.select :issue_id,
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label "Assunto", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.select :issue_id,
           Issue.find(:all).collect { |issue| [issue.description, issue.id] },
           :prompt => "Selecione..." %>
-  </div>
-  <div class="field">
-    <%= f.label "Departamento" %><br />
-    <%= f.select :department_id,
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label "Departamento", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.select :department_id,
           Department.find(:all).collect { |department| [department.name, department.id] },
           :prompt => "Selecione..." %>
-  </div>
-  <div class="field">
-    <%= f.label "Descrição" %><br />
-    <%= f.text_field :description %>
-  </div>
-  <div class="field">
-    <%= f.label "Lugar" %><br />
-    <%= f.text_field :place, :class => "smaller" %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Salvar" %>
-  </div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label "Descrição", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :description, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label "Pasta", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :place, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <%= f.submit "Criar", :class => 'btn btn-primary' %>
+      <%= link_to 'Cancelar', documents_path, :class => 'btn' %>
+    </div>
+  </fieldset>
 <% end %>

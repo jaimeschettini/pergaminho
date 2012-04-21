@@ -32,6 +32,7 @@ GEM
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
+    client_side_validations (3.1.4)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -68,6 +69,7 @@ GEM
     mime-types (1.18)
     multi_json (1.1.0)
     multipart-post (1.1.4)
+    nokogiri (1.5.2)
     oauth (0.4.5)
     oauth2 (0.5.2)
       faraday (~> 0.7)
@@ -134,8 +136,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  client_side_validations
   coffee-rails (~> 3.2.1)
   jquery-rails
+  nokogiri
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)
   sorcery

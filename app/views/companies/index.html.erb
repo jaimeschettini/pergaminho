@@ -1,23 +1,26 @@
-<h1>Empresas</h1>
-
-<p id="notice"><%= notice %></p>
-
-<table>
-  <tr>
-    <th>Nome</th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @companies.each do |company| %>
-  <tr class="<%= cycle("even", "odd") %>">
-    <td><%= company.name %></td>
-    <td><%= link_to 'Editar', edit_company_path(company) %></td>
-    <td><%= link_to 'Deletar', company, confirm: 'Tem certeza?', method: :delete %></td>
-  </tr>
-<% end %>
+<h1>Companys</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Created at</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @companies.each do |company| %>
+      <tr>
+        <td><%= company.id %></td>
+        <td><%= link_to company.name, company_path(company) %></td>
+        <td><%= company.created_at %></td>
+        <td>
+          <%= link_to 'Edit', edit_company_path(company), :class => 'btn btn-mini' %>
+          <%= link_to 'Destroy', company_path(company), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
-<br />
-
-<%= link_to 'Novo', new_company_path %>
+<%= link_to 'New', new_company_path, :class => 'btn btn-primary' %>

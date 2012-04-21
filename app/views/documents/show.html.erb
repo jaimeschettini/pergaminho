@@ -1,35 +1,37 @@
-<p id="notice"><%= notice %></p>
+<h1>/Document</h1>
 
 <p>
-  <b>Company:</b>
+  <b>Company</b><br>
   <%= @document.company_id %>
 </p>
 
 <p>
-  <b>Issue:</b>
+  <b>Issue</b><br>
   <%= @document.issue_id %>
 </p>
 
 <p>
-  <b>Department:</b>
+  <b>Department</b><br>
   <%= @document.department_id %>
 </p>
 
 <p>
-  <b>Description:</b>
+  <b>Description</b><br>
   <%= @document.description %>
 </p>
 
 <p>
-  <b>Place:</b>
+  <b>Place</b><br>
   <%= @document.place %>
 </p>
 
 <p>
-  <b>Status:</b>
+  <b>Status</b><br>
   <%= @document.status %>
 </p>
 
-
-<%= link_to 'Edit', edit_document_path(@document) %> |
-<%= link_to 'Back', documents_path %>
+<div class="form-actions">
+  <%= link_to 'Back', documents_path, :class => 'btn'  %>
+  <%= link_to 'Edit', edit_document_path(@document), :class => 'btn' %>
+  <%= link_to 'Delete', document_path(@document), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+</div>

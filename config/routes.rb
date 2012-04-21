@@ -2,7 +2,6 @@ Pergaminho::Application.routes.draw do
   root :to => 'home#index'
 
   get "home/index"
-  
 
   resources :documents do
     get 'search', :on => :collection

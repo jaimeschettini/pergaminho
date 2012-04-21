@@ -20,7 +20,7 @@
 	          <span class="icon-bar"></span>
 	          <span class="icon-bar"></span>
 	        </a>
-	        <a class="brand" href="#">Pergaminho</a>
+	        <%= link_to "Pergaminho", root_path, :class => "brand" %>
 	        <div class="nav-collapse">
 	          <ul class="nav">
 				<li ><%= link_to "Documentos", :documents %></li>
@@ -39,8 +39,7 @@
 		
 	<div id="container">
 		<div class="row">
-
-      		<div class="span8 offset2"><%= yield %></div>
+      		<div class="span10 offset2"><%= yield %></div>
       	</div>
 	</div>
 
