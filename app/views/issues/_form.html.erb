@@ -1,9 +1,9 @@
-<%= form_for @issue, :html => { :class => 'form-horizontal' } do |f| %>
+<%= form_for @issue, :validate => true, :html => { :class => 'form-horizontal' } do |f| %>
   <fieldset>
-    <legend><%= controller.action_name.capitalize %> /Issue</legend>
+    <legend><%= controller.action_name == 'new' ? 'Criar' : 'Editar' %> assunto</legend>
 
     <div class="control-group">
-      <%= f.label :description, :class => 'control-label' %>
+      <%= f.label "Descrição", :class => 'control-label' %>
       <div class="controls">
         <%= f.text_field :description, :class => 'text_field' %>
       </div>
@@ -11,7 +11,7 @@
 
     <div class="form-actions">
       <%= f.submit nil, :class => 'btn btn-primary' %>
-      <%= link_to 'Cancel', issues_path, :class => 'btn' %>
+      <%= link_to 'Cancelar', issues_path, :class => 'btn' %>
     </div>
   </fieldset>
 <% end %>

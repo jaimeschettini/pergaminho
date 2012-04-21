@@ -1,6 +1,6 @@
 <%= form_for @document, :validate => true, :html => { :class => 'form-horizontal' } do |f| %>
   <fieldset>
-    <legend>Criar Documento</legend>
+    <legend><%= controller.action_name == 'new' ? 'Criar' : 'Editar' %> documento</legend>
 
     <div class="control-group">
       <%= f.label "Empresa", :class => 'control-label' %>
@@ -44,7 +44,7 @@
     </div>
 
     <div class="form-actions">
-      <%= f.submit "Criar", :class => 'btn btn-primary' %>
+      <%= f.submit nil, :class => 'btn btn-primary' %>
       <%= link_to 'Cancelar', documents_path, :class => 'btn' %>
     </div>
   </fieldset>

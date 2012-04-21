@@ -18,17 +18,6 @@ class DocumentsController < ApplicationController
     render :action => :index
   end
 
-  # GET /documents/1
-  # GET /documents/1.json
-  def show
-    @document = Document.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @document }
-    end
-  end
-
   # GET /documents/new
   # GET /documents/new.json
   def new
@@ -52,11 +41,9 @@ class DocumentsController < ApplicationController
 
     respond_to do |format|
       if @document.save
-        format.html { redirect_to documents_path, notice: 'O document foi criado com sucesso.' }
-        format.json { render json: @document, status: :created, location: @document }
+        format.html { redirect_to documents_path, notice: 'O documento foi criado com sucesso.' }
       else
         format.html { render action: "new" }
-        format.json { render json: @document.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -68,11 +55,9 @@ class DocumentsController < ApplicationController
 
     respond_to do |format|
       if @document.update_attributes(params[:document])
-        format.html { redirect_to @document, notice: 'Document was successfully updated.' }
-        format.json { head :no_content }
+        format.html { redirect_to documents_path, :notice => 'O documento foi atualizado com sucesso.' }
       else
         format.html { render action: "edit" }
-        format.json { render json: @document.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -85,7 +70,6 @@ class DocumentsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to documents_url }
-      format.json { head :no_content }
     end
   end
 end

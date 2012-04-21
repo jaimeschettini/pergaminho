@@ -39,7 +39,14 @@
 		
 	<div id="container">
 		<div class="row">
-      		<div class="span10 offset2"><%= yield %></div>
+      		<div class="span10 offset2">
+      			<% flash.each do |key, value| %>
+				    <%= content_tag(:div, value, :class => "alert #{key}") %>
+  				<% end %>
+
+
+      			<%= yield %>
+      		</div>
       	</div>
 	</div>
 

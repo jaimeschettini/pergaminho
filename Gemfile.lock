@@ -69,7 +69,6 @@ GEM
     mime-types (1.18)
     multi_json (1.1.0)
     multipart-post (1.1.4)
-    nokogiri (1.5.2)
     oauth (0.4.5)
     oauth2 (0.5.2)
       faraday (~> 0.7)
@@ -139,7 +138,6 @@ DEPENDENCIES
   client_side_validations
   coffee-rails (~> 3.2.1)
   jquery-rails
-  nokogiri
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)
   sorcery

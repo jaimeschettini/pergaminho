@@ -1,4 +1,6 @@
-<h1>Issues</h1>
+<h1>Assuntos</h1>
+<div class="new"><%= link_to 'Novo', new_issue_path, :class => 'btn btn-primary ' %></div>
+
 <table class="table table-striped">
   <thead>
     <tr>
@@ -18,5 +20,3 @@
     <% end %>
   </tbody>
 </table>
-
-<%= link_to 'Novo', new_issue_path, :class => 'btn btn-primary' %>
