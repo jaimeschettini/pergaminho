@@ -1,5 +1,6 @@
 class Department < ActiveRecord::Base
 	has_many :documents
+	belongs_to :group
 
-	validates :name, :presence => true
+	validates :name, :group_id, :presence => true
 end

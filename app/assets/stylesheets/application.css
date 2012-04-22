@@ -10,6 +10,18 @@ h1 {
 	display: inline;
 }
 
+.btn-mini:visited {
+	color: #333 !important;
+}
+
+.btn-primary:visited, .btn-info:visited {
+	color: white !important;
+}
+
+.btn-danger:visited, .btn-info:visited {
+	color: white !important;
+}
+
 .search {
 	margin-top: 15px;
 }
@@ -31,6 +43,11 @@ h1 {
 
 .form-inline select {
 	width: 20%;	
+}
+
+
+.field_with_errors {
+	background-color: transparent !important;
 }
 
 .field_with_errors > label, .field_with_errors .help-block, .field_with_errors .help-inline > label {

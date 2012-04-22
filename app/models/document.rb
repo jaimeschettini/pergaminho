@@ -1,11 +1,12 @@
 class Document < ActiveRecord::Base
-	validates :description, :issue_id, :department_id, :company_id, :place, :presence => true
+	validates :description, :issue_id, :department_id, :company_id, :place, :group_id, :presence => true
 
 	before_save :default_values
 
 	belongs_to :issue
 	belongs_to :department
 	belongs_to :company
+	belongs_to :group
 
 	def default_values
 		self.status ||= "Disponivel"

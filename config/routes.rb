@@ -1,4 +1,6 @@
 Pergaminho::Application.routes.draw do
+  resources :groups
+
   root :to => 'home#index'
 
   get "home/index"
