@@ -3,7 +3,7 @@ class AddGroupToIssue < ActiveRecord::Migration
   end
 
   def change
-    add_column :issues, :group_id, :integer
+    add_column :issues, :group_id, :integer, :null => false
 
     Issue.reset_column_information
     Issue.all.each do |model|

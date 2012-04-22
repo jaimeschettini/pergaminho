@@ -3,7 +3,7 @@ class AddGroupToDocument < ActiveRecord::Migration
   end
 
   def change
-    add_column :documents, :group_id, :integer
+    add_column :documents, :group_id, :integer, :null => false
 
     Document.reset_column_information
     Document.all.each do |model|

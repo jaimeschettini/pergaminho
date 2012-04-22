@@ -3,7 +3,7 @@ class AddGroupToCompany < ActiveRecord::Migration
   end
 
   def change
-    add_column :companies, :group_id, :integer
+    add_column :companies, :group_id, :integer, :null => false
 
     Company.reset_column_information
     Company.all.each do |model|

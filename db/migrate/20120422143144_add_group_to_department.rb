@@ -3,7 +3,7 @@ class AddGroupToDepartment < ActiveRecord::Migration
   end
 
   def change
-    add_column :departments, :group_id, :integer
+    add_column :departments, :group_id, :integer, :null => false
 
     Department.reset_column_information
     Department.all.each do |model|
