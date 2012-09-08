@@ -6,7 +6,6 @@ class UsersController < ApplicationController
   def index
     @users = User.where('id > 1') # all less admin user
 
-
     respond_to do |format|
       format.html # index.html.erb
     end
@@ -25,6 +24,7 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
     @user = User.find(params[:id])
+    protect_from_editing_other_users
   end
 
   # POST /users
@@ -67,6 +67,13 @@ class UsersController < ApplicationController
         format.html { redirect_to users_url }
         format.json { head :no_content }
       end
+    end
+  end
+
+  private
+  def protect_from_editing_other_users
+    if @current_user != @user
+      respond_to { |format| format.html { redirect_to users_path, notice: 'Não é possível editar outros usuários.' } }
     end
   end
 end

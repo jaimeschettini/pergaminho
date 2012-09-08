@@ -4,7 +4,6 @@ class UserSessionsController < ApplicationController
   layout "login"
 
   skip_before_filter :require_login, :except => [:destroy]
-
   
   def new
     @user = User.new

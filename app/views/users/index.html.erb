@@ -22,7 +22,6 @@
           <td><%= user.email %></td>
           <td><%= user.phone %></td>
           <td>
-            <%= link_to 'Editar', edit_user_path(user), :class => 'btn btn-mini' %>
             <%= link_to 'Deletar', user_path(user), :method => :delete, :confirm => 'Tem certeza?', :class => 'btn btn-mini btn-danger' %>
           </td>
         </tr>
