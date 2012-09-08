@@ -37,7 +37,6 @@ class DocumentsController < ApplicationController
   # POST /documents.json
   def create
     @document = Document.new(params[:document])
-    @document.group_id = Group.first.id
 
     respond_to do |format|
       if @document.save

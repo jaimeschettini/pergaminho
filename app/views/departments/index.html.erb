@@ -1,22 +1,26 @@
 <h1>Departamentos</h1>
 <div class="new"><%= link_to 'Novo', new_department_path, :class => 'btn btn-primary ' %></div>
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Ações</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @departments.each do |department| %>
+<% if @departments.empty? %>
+  <%= render :partial => '/utils/empty', :locals => {:model_name => "departamento"} %>
+<% else %>
+  <table class="table table-striped">
+    <thead>
       <tr>
-        <td><%= department.name %></td>
-        <td>
-          <%= link_to 'Editar', edit_department_path(department), :class => 'btn btn-mini' %>
-          <%= link_to 'Deletar', department_path(department), :method => :delete, :confirm => 'Tem certeza?', :class => 'btn btn-mini btn-danger' %>
-        </td>
+        <th>Nome</th>
+        <th>Ações</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <% @departments.each do |department| %>
+        <tr>
+          <td><%= department.name %></td>
+          <td>
+            <%= link_to 'Editar', edit_department_path(department), :class => 'btn btn-mini' %>
+            <%= link_to 'Deletar', department_path(department), :method => :delete, :confirm => 'Tem certeza?', :class => 'btn btn-mini btn-danger' %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>  

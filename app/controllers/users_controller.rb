@@ -4,7 +4,8 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.where('id > 1') # all less admin user
+
 
     respond_to do |format|
       format.html # index.html.erb
@@ -30,12 +31,6 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(params[:user])
-    if session[:group_id]
-      @user.group_id = session[:group_id]
-    else
-      @user.group_id = Group.first.id
-    end
-
 
     respond_to do |format|
       if @user.save
@@ -63,12 +58,15 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    @user = User.find(params[:id])
-    @user.destroy
-
     respond_to do |format|
-      format.html { redirect_to users_url }
-      format.json { head :no_content }
+      @user = User.find(params[:id])
+      if @user.id == User.first.id
+        format.html { redirect_to users_path, alert: "O usuário administrador não pode ser removido." }
+      else
+        @user.destroy
+        format.html { redirect_to users_url }
+        format.json { head :no_content }
+      end
     end
   end
 end

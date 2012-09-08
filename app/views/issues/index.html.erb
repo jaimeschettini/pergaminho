@@ -1,22 +1,26 @@
 <h1>Assuntos</h1>
 <div class="new"><%= link_to 'Novo', new_issue_path, :class => 'btn btn-primary ' %></div>
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Ações</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @issues.each do |issue| %>
+<% if @issues.empty? %>
+  <%= render :partial => '/utils/empty', :locals => {:model_name => "assunto"} %>
+<% else %>
+  <table class="table table-striped">
+    <thead>
       <tr>
-        <td><%= link_to issue.description, issue_path(issue) %></td>
-        <td>
-          <%= link_to 'Editar', edit_issue_path(issue), :class => 'btn btn-mini' %>
-          <%= link_to 'Deletar', issue_path(issue), :method => :delete, :confirm => 'Tem certeza?', :class => 'btn btn-mini btn-danger' %>
-        </td>
+        <th>Descrição</th>
+        <th>Ações</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <% @issues.each do |issue| %>
+        <tr>
+          <td><%= link_to issue.description, issue_path(issue) %></td>
+          <td>
+            <%= link_to 'Editar', edit_issue_path(issue), :class => 'btn btn-mini' %>
+            <%= link_to 'Deletar', issue_path(issue), :method => :delete, :confirm => 'Tem certeza?', :class => 'btn btn-mini btn-danger' %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>

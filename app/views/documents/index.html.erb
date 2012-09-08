@@ -1,53 +1,57 @@
 <h1>Documentos</h1>
 <div class="new"><%= link_to 'Novo', new_document_path, :class => 'btn btn-primary ' %></div>
 
-<div class="search">
-    <%= form_for @document, :method => 'get', :url => search_documents_path, 
-          :html => { :class => 'well form-inline' } do |f| %>
-        
-        <legend>Pesquisa:</legend>
+<% if @documents.empty? %>
+  <%= render :partial => '/utils/empty', :locals => {:model_name => "documento"} %>
+<% else %>
+  <div class="search">
+      <%= form_for @document, :method => 'get', :url => search_documents_path, 
+            :html => { :class => 'well form-inline' } do |f| %>
+          
+          <legend>Pesquisa:</legend>
 
-        <%= f.text_field :description, :placeholder => "Descrição"%>
+          <%= f.text_field :description, :placeholder => "Descrição"%>
 
-        <%= f.select :issue_id,
-          Issue.find(:all).collect { |issue| [issue.description, issue.id] },
-          :include_blank => "Assunto..." %>
+          <%= f.select :issue_id,
+            Issue.find(:all).collect { |issue| [issue.description, issue.id] },
+            :include_blank => "Assunto..." %>
 
-        <%= f.select :company_id,
-          Company.find(:all).collect { |company| [company.name, company.id] },
-          :include_blank => "Empresa..." %>
+          <%= f.select :company_id,
+            Company.find(:all).collect { |company| [company.name, company.id] },
+            :include_blank => "Empresa..." %>
 
-        <%= f.select :department_id,
-          Department.find(:all).collect { |department| [department.name, department.id] },
-          :include_blank => "Departamento..." %>
-        <%= f.submit "Pesquisar", :class => "btn btn-info" %>
-    <% end %>
-</div>  
+          <%= f.select :department_id,
+            Department.find(:all).collect { |department| [department.name, department.id] },
+            :include_blank => "Departamento..." %>
+          <%= f.submit "Pesquisar", :class => "btn btn-info" %>
+      <% end %>
+  </div>  
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Assunto</th>
-      <th>Empresa</th>
-      <th>Departamento</th>
-      <th>Pasta</th>
-      <th>Ações</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @documents.each do |document| %>
+  <table class="table table-striped">
+    <thead>
       <tr>
-        <td><%= document.description %></td>
-        <td><%= document.issue.description %></td>
-        <td><%= document.company.name %></td>
-        <td><%= document.department.name %></td>
-        <td><%= document.place %></td>
-        <td>
-          <%= link_to 'Editar', edit_document_path(document), :class => 'btn btn-mini' %>
-          <%= link_to 'Deletar', document_path(document), :method => :delete, :confirm => 'Tem certeza?', :class => 'btn btn-mini btn-danger' %>
-        </td>
+        <th>Descrição</th>
+        <th>Assunto</th>
+        <th>Empresa</th>
+        <th>Departamento</th>
+        <th>Pasta</th>
+        <th>Ações</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <% @documents.each do |document| %>
+        <tr>
+          <td><%= document.description %></td>
+          <td><%= document.issue.description %></td>
+          <td><%= document.company.name %></td>
+          <td><%= document.department.name %></td>
+          <td><%= document.place %></td>
+          <td>
+            <%= link_to 'Editar', edit_document_path(document), :class => 'btn btn-mini' %>
+            <%= link_to 'Deletar', document_path(document), :method => :delete, :confirm => 'Tem certeza?', :class => 'btn btn-mini btn-danger' %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>

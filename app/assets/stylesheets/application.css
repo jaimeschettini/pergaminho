@@ -64,3 +64,7 @@ h1 {
 	border-color: #D6E9C6 !important;
 	color: #468847 !important;
 }
+
+.empty {
+	margin-top: 10px;
+}

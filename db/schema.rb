@@ -11,20 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120422153346) do
+ActiveRecord::Schema.define(:version => 20120907232110) do
 
   create_table "companies", :force => true do |t|
-    t.string   "name", :null => false
+    t.string   "name",       :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "group_id", :null => false
   end
 
   create_table "departments", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "group_id", :null => false
   end
 
   create_table "documents", :force => true do |t|
@@ -36,20 +34,12 @@ ActiveRecord::Schema.define(:version => 20120422153346) do
     t.boolean  "status",        :limit => 255
     t.datetime "created_at",                   :null => false
     t.datetime "updated_at",                   :null => false
-    t.integer  "group_id", :null => false
-  end
-
-  create_table "groups", :force => true do |t|
-    t.string   "name", :null => false
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
   end
 
   create_table "issues", :force => true do |t|
     t.string   "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-    t.integer  "group_id", :null => false
   end
 
   create_table "users", :force => true do |t|
@@ -59,7 +49,6 @@ ActiveRecord::Schema.define(:version => 20120422153346) do
     t.string   "phone"
     t.string   "crypted_password"
     t.string   "salt"
-    t.integer  "group_id",         :null => false
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
