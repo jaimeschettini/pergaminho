@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20120907232110) do
 
   create_table "companies", :force => true do |t|
-    t.string   "name",       :null => false
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -31,9 +31,9 @@ ActiveRecord::Schema.define(:version => 20120907232110) do
     t.integer  "department_id"
     t.string   "description"
     t.string   "place"
-    t.boolean  "status",        :limit => 255
-    t.datetime "created_at",                   :null => false
-    t.datetime "updated_at",                   :null => false
+    t.string   "status"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "issues", :force => true do |t|
