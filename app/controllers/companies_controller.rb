@@ -16,6 +16,7 @@ class CompaniesController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
+      format.js # new.js.erb
     end
   end
 
@@ -32,6 +33,7 @@ class CompaniesController < ApplicationController
     respond_to do |format|
       if @company.save
         format.html { redirect_to companies_url, notice: 'A empresa foi criada com sucesso.' }
+        format.js 
       else
         format.html { render action: "new" }
       end

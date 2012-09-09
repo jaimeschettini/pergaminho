@@ -31,7 +31,6 @@ class Document < ActiveRecord::Base
 		["department_id = ?", "#{department.id}"] unless department.blank? || department.id.blank?
 	end
 
-
 	def conditions
 	  [conditions_clauses.join(' AND '), *conditions_options]
 	end
