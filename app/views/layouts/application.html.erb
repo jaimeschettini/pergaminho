@@ -31,8 +31,30 @@
 	          </ul>
 	          <ul class="nav pull-right">
 				<% if current_user %>
-			      <li><%= link_to "Editar perfil", edit_user_path(current_user.id) %></li>
-			      <li><%= link_to "Encerrar sessão", :logout %></li>
+			      <li class="dropdown">
+				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				    	<i class="icon-user icon-white"></i>
+			        	<%= current_user.name %>
+			        	<b class="caret"></b>
+			      	</a>
+				    <ul class="dropdown-menu">
+				    	<li>
+				    		<%= link_to edit_user_path(current_user.id) do %>
+				    			<i class="icon-pencil"></i> Editar perfil
+				    		<% end %>
+				    	</li>
+				    	<li>
+				    		<%= link_to edit_user_path(current_user.id) do %>
+				    			<i class="icon-random"></i> Trocar senha
+			    			<% end %>
+				    	</li>
+				    </ul>
+				  </li>
+			      <li>
+			      	<%= link_to :logout do %>
+			      		<i class="icon-off icon-white"></i> Encerrar sessão
+		      		<% end %>
+			      </li>
 			    <% end %>
 	          </ul>
 	        </div>
