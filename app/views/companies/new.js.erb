@@ -1,0 +1,3 @@
+var thisModal = $('#modal');
+thisModal.modal();
+thisModal.find(".modal-body").html("<%= escape_javascript(render :partial => '/companies/form', :locals => { :cancel_action => 'javascript:hideModal(thisModal)', :is_remote_action => true })%>");
