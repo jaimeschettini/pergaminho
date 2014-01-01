@@ -13,3 +13,19 @@
 $(function() {
 	$(':input:visible:first').focus();
 });
+
+function ajax_get(url) {
+	$.ajax({
+		url: url,
+		type: "GET",
+		processData: false,
+		contentType: false,
+		beforeSend: function(xhr, settings) {
+	    	xhr.setRequestHeader('accept', '*/*;q=0.5, ' + settings.accepts.script);
+	    }
+	});
+}
+
+function hideModal(modal) {
+	modal.modal('hide');
+}

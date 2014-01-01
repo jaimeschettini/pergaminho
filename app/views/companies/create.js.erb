@@ -1,0 +1,7 @@
+var option = $("<option></option>");
+option.attr("value", <%= @company.id %>);
+option.html("<%= @company.name %>");
+option.attr("selected", "selected");
+
+$("#document_company_id").append(option);
+$('#modal').modal('hide');
