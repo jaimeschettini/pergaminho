@@ -52,6 +52,12 @@ module Pergaminho
 
     # Enable the asset pipeline
     config.assets.enabled = true
+
+    # The most common cause of failures in assets:precompile is an app that relies on having its environment present to boot. 
+    # Your app’s config vars are not present in the environment during slug compilation, so you should take steps to handle 
+    # the nil case for config vars (and add-on resources) in your initializers.
+    # In Rails 3.x, you can prevent initializing your application and connecting to the database by ensuring that the following line is in your config/application.rb.
+    # https://devcenter.heroku.com/articles/rails-asset-pipeline#troubleshooting
     config.assets.initialize_on_precompile = false
 
     # Version of your assets, change this if you want to expire all your assets
